@@ -28,5 +28,8 @@ vim.keymap.set("n", "<leader>l", "<cmd>bnext<CR>")
 vim.keymap.set("n", "<leader>d", "<cmd>bdelete<BAR>bprev<CR>")
 
 -- comments
-vim.keymap.set("n", "<leader>//", "gcc")
-vim.keymap.set("v", "<leader>//", "gc")
+-- vim.keymap.set("n", "<leader>//", "gcc")
+-- vim.keymap.set("v", "<leader>//", "gc")
+
+-- lazy git remaps
+vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>")
