@@ -33,3 +33,6 @@ vim.keymap.set("n", "<leader>d", "<cmd>bdelete<BAR>bprev<CR>")
 
 -- lazy git remaps
 vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>")
+
+-- formatting
+vim.keymap.set("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>")

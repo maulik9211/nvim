@@ -15,11 +15,12 @@ require("nvim-tree").setup({
   },
   view = {
     width = 30,
+    -- side = 'right'
   },
   renderer = {
     group_empty = false,
   },
   filters = {
-    dotfiles = false,
+    dotfiles = true,
   },
 })
