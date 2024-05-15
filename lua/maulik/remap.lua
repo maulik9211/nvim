@@ -27,6 +27,9 @@ vim.keymap.set("n", "<leader>h", "<cmd>bprev<CR>")
 vim.keymap.set("n", "<leader>l", "<cmd>bnext<CR>")
 vim.keymap.set("n", "<leader>d", "<cmd>bdelete<BAR>bprev<CR>")
 
+-- telescope
+vim.keymap.set("n", "<leader>ps", "<cmd>Telescope live_grep<CR>")
+
 -- comments
 -- vim.keymap.set("n", "<leader>//", "gcc")
 -- vim.keymap.set("v", "<leader>//", "gc")
@@ -36,3 +39,4 @@ vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>")
 
 -- formatting
 vim.keymap.set("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>")
+vim.keymap.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
