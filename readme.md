@@ -7,11 +7,15 @@ This is my neovim config. Highly inspired by ThePrimeagen, and other youtube and
 
     cd ~/.config
 
-### Setup packer
+### Bootstrapping
+
+    nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+
+#### Setup packer
 
     git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
  
-### Setting up
+#### Setting up
 
     :PackerSync
 
