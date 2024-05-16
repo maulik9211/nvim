@@ -10,17 +10,29 @@ require("nvim-tree").setup()
 
 -- OR setup with some options
 require("nvim-tree").setup({
-  sort = {
-    sorter = "case_sensitive",
-  },
-  view = {
-    width = 30,
-    -- side = 'right'
-  },
-  renderer = {
-    group_empty = false,
-  },
-  filters = {
-    dotfiles = true,
-  },
+    sort = {
+        sorter = "case_sensitive",
+    },
+    view = {
+        width = 30,
+        -- side = 'right'
+    },
+    renderer = {
+        group_empty = false,
+        indent_markers = {
+            enable = true,
+        },
+        icons = {
+            git_placement = "signcolumn",
+            show = {
+                file = true,
+                folder = false,
+                folder_arrow = false,
+                git = true,
+            },
+        },
+    },
+    filters = {
+        dotfiles = false,
+    },
 })

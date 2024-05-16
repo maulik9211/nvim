@@ -18,6 +18,7 @@ vim.keymap.set("x", "<leader>p", "\"_dp")
 
 -- toggles nvimtree
 vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
+vim.keymap.set("n", "'", "<cmd>NvimTreeCollapse<CR>")
 
 -- focuses on nvimtree
 -- vim.keymap.set("n", "<leader>ef", "<cmd>NvimTreeFocus<CR>")
