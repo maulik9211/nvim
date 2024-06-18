@@ -5,7 +5,11 @@ lsp.preset("recommended")
 lsp.ensure_installed({
     "tsserver",
     "eslint",
-    "sqlls"
+    "sqlls",
+    "astro",
+    "tailwindcss",
+    "jsonls",
+    "lua_ls"
 })
 
 local cmp = require("cmp")

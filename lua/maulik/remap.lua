@@ -41,3 +41,5 @@ vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>")
 -- formatting
 vim.keymap.set("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>")
 vim.keymap.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
+
+
