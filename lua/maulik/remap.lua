@@ -39,7 +39,15 @@ vim.keymap.set("n", "<leader>ps", "<cmd>Telescope live_grep<CR>")
 vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>")
 
 -- formatting
-vim.keymap.set("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>")
+-- vim.keymap.set("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>")
+vim.keymap.set("n", "<leader>f", function()
+    -- Organize imports for TypeScript/JavaScript
+    vim.lsp.buf.execute_command({
+        command = "_typescript.organizeImports",
+        arguments = { vim.api.nvim_buf_get_name(0) }
+    })
+    -- Format the document
+    vim.lsp.buf.format()
+end, { noremap = true, silent = true })
+
 vim.keymap.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
-
-
