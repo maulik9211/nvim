@@ -20,3 +20,22 @@ This is my neovim config. Highly inspired by ThePrimeagen, and other youtube and
     :PackerSync
 
 and relaunch.
+
+
+# Updating
+
+### Load packer
+
+    :so lua/maulik/packer.lua
+
+### Packer Sync and Update
+
+    :PackerSync 
+    :PackerUpdate
+
+### Tree Siter Update
+    :TSUpdate
+
+### Mason update
+    :MasonUpdate
+

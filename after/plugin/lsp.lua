@@ -3,13 +3,16 @@ local lsp = require('lsp-zero')
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-    "tsserver",
+    "yamlls",
+    -- "tsserver",
+    "ts_ls",
     "eslint",
     "sqlls",
     "astro",
     "tailwindcss",
     "jsonls",
-    "lua_ls"
+    "lua_ls",
+    "lemminx"
 })
 
 local cmp = require("cmp")
@@ -26,7 +29,7 @@ lsp.setup_nvim_cmp({
 })
 
 lsp.on_attach(function(client, bufnr)
-    require "lsp-format".on_attach(client)
+    -- require("lsp-format").on_attach(client)
 
     local opts = { buffer = bufnr, remap = false }
 
