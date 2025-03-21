@@ -85,11 +85,6 @@ _G.packer_plugins = {
     path = "/Users/maulik/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  astrolsp = {
-    loaded = true,
-    path = "/Users/maulik/.local/share/nvim/site/pack/packer/start/astrolsp",
-    url = "https://github.com/AstroNvim/astrolsp"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/maulik/.local/share/nvim/site/pack/packer/start/bufferline.nvim",

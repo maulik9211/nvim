@@ -103,11 +103,4 @@ return require('packer').startup(function(use)
     use 'navarasu/onedark.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
 
-    use {
-        "AstroNvim/astrolsp",
-    }
-
-    require("astrolsp").setup {
-        -- set configuration options  as described below
-    }
 end)
