@@ -103,4 +103,7 @@ return require('packer').startup(function(use)
     use 'navarasu/onedark.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
 
+    use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+
+
 end)

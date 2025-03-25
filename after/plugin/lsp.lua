@@ -4,11 +4,8 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
     "yamlls",
-    -- "tsserver",
     "ts_ls",
-    "eslint",
     "sqlls",
-    "astro",
     "tailwindcss",
     "jsonls",
     "lua_ls",
